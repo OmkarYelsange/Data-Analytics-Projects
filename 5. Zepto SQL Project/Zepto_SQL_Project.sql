@@ -13,12 +13,15 @@ outOfStock BOOLEAN,
 quantity INTEGER
 );
 
+
 -- No of DataRows
 SELECT COUNT(*) FROM zepto;
+
 
 -- Data Explore
 SELECT * FROM zepto
 LIMIT 10;
+
 
 -- Null Values
 SELECT * FROM zepto 
@@ -39,6 +42,7 @@ OR
 outOfStock IS NULL
 OR
 quantity IS NULL;
+
 
 -- Explore Categories
 SELECT DISTINCT category FROM zepto
