@@ -13,5 +13,39 @@ outOfStock BOOLEAN,
 quantity INTEGER
 );
 
+-- No of DataRows
+SELECT COUNT(*) FROM zepto;
+
+-- Data Explore
 SELECT * FROM zepto
 LIMIT 10;
+
+-- Null Values
+SELECT * FROM zepto 
+WHERE category IS NULL
+OR
+name IS NULL
+OR
+mrp IS NULL
+OR
+discountPercent IS NULL
+OR
+availableQuantity IS NULL
+OR
+discountedSellingPrice IS NULL
+OR
+weightInGms IS NULL
+OR
+outOfStock IS NULL
+OR
+quantity IS NULL;
+
+-- Explore Categories
+SELECT DISTINCT category FROM zepto
+GROUP BY category;
+
+
+-- Products in Stock v/s Out of Stock
+SELECT outofstock, COUNT(sku_id) 
+FROM zepto
+GROUP BY outofstock;
