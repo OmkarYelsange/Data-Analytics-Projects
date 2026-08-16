@@ -744,7 +744,7 @@ I am interested in transforming raw data into meaningful insights and building a
 
 ### 🔗 Connect With Me
 
-* 💼 **LinkedIn:** [Omkar Yelsange](https://www.linkedin.com/omkar-yelsange)
+* 💼 **LinkedIn:** [Omkar Yelsange](https://www.linkedin.com/in/omkar-yelsange/)
 * 🐙 **GitHub:** [OmkarYelsange](https://github.com/OmkarYelsange)
 
 ---
