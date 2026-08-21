@@ -760,10 +760,6 @@ If you find these projects useful, feel free to:
 
 ---
 
-## 📄 License
-
-This repository is intended primarily for **educational, learning, portfolio, and demonstration purposes**.
-
 ---
 
 <p align="center">
