@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS zepto;
 
--- Create Table
 CREATE TABLE zepto(
 sku_id SERIAL PRIMARY KEY,
 category VARCHAR(120),
@@ -67,16 +66,8 @@ ORDER BY COUNT(sku_id) DESC;
 -- Data Cleaning
 -- Price is 0
 SELECT * FROM zepto
-WHERE mrp=0 
-OR 
-discountedSellingPrice=0;
+WHERE mrp=0;
 
 DELETE FROM zepto 
-WHERE mrp=0 OR discountedSellingPrice=0;
-
-
--- Convert Paisa to Rupees
-UPDATE zepto
-SET mrp = mrp/100.0,
-discountedSellingPrice = discountedSellingPrice/100.0
+WHERE mrp=
 

@@ -1,0 +1,4 @@
+CREATE DATABASE OLA;
+USE OLA;
+
+SELECT * FROM bookings;
