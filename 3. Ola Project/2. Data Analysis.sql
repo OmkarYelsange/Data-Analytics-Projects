@@ -19,6 +19,8 @@ GROUP BY Customer_ID
 ORDER BY COUNT(Booking_ID) DESC LIMIT 5;
 
 -- 5. Get the number of rides cancelled by drivers due to personal and car-related issues:
+SELECT COUNT(*) FROM bookings
+WHERE Canceled_Rides_by_Driver = 'Personal & Car related issue';
 
 -- 6. Find the maximum and minimum driver ratings for Prime Sedan bookings:
 
