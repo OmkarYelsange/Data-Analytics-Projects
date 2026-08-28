@@ -1,3 +1,5 @@
+SELECT * FROM bookings;
+
 -- 1. Retrieve all successful bookings:
 SELECT * FROM bookings
 WHERE Booking_Status = "Success";
@@ -7,6 +9,8 @@ SELECT Vehicle_Type,AVG(Ride_Distance) FROM bookings
 GROUP BY Vehicle_Type;
 
 -- 3. Get the total number of cancelled rides by customers:
+SELECT COUNT(*) FROM bookings
+WHERE Booking_Status = "Canceled by Customer";
 
 -- 4. List the top 5 customers who booked the highest number of rides:
 
