@@ -39,3 +39,5 @@ SELECT SUM(Booking_Value) FROM bookings
 WHERE Booking_Status = 'Success';
 
 -- 10. List all incomplete rides along with the reason:
+SELECT Incomplete_Rides,Incomplete_Rides_Reason FROM bookings
+WHERE Incomplete_Rides IS NULL;
