@@ -23,8 +23,12 @@ SELECT COUNT(*) FROM bookings
 WHERE Canceled_Rides_by_Driver = 'Personal & Car related issue';
 
 -- 6. Find the maximum and minimum driver ratings for Prime Sedan bookings:
+SELECT MAX(Driver_Ratings),MIN(Driver_Ratings) FROM bookings
+WHERE Vehicle_Type = 'Prime Sedan';
 
 -- 7. Retrieve all rides where payment was made using UPI:
+SELECT * FROM bookings
+WHERE Payment_Method = 'UPI';
 
 -- 8. Find the average customer rating per vehicle type:
 
