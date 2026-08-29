@@ -25,4 +25,37 @@ C_TAT IS NULL OR
 Incomplete_Rides IS NULL OR
 Payment_Method IS NULL OR
 Driver_Ratings IS NULL OR
-Customer_Rating IS NULL;
+Customer_Rating IS NULL
+LIMIT 10;
+
+SELECT * FROM bookings
+WHERE Payment_Method IS NULL;
+
+UPDATE bookings
+SET Payment_Method = 'Not Applicable'
+WHERE Payment_Method IS NULL;
+
+UPDATE bookings
+SET Driver_Ratings = 'Not Applicable'
+WHERE Driver_Ratings IS NULL;
+
+UPDATE bookings
+SET Customer_Rating = 'Not Applicable'
+WHERE Customer_Rating IS NULL;
+
+UPDATE bookings
+SET V_TAT = 'Not Applicable'
+WHERE V_TAT IS NULL;
+
+UPDATE bookings
+SET C_TAT = 'Not Applicable'
+WHERE C_TAT IS NULL;
+
+UPDATE bookings
+SET Incomplete_Rides = 'Yes'
+WHERE Incomplete_Rides = 'Not Applicable';
+
+
+
+
+
