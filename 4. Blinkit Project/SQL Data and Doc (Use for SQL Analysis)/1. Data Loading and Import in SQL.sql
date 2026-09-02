@@ -1,4 +1,4 @@
 CREATE SCHEMA blinkit;
 USE blinkit;
 
-SELECT * FROM blinkit;
+SELECT COUNT(*) FROM blinkit;
