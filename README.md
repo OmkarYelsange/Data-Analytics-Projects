@@ -753,8 +753,7 @@ I am interested in transforming raw data into meaningful insights and building a
 
 If you find these projects useful, feel free to:
 
-* 💬 Share feedback
-* 🤝 Connect with me for collaboration
+* 💬 Share feedback
 
 ---
 
